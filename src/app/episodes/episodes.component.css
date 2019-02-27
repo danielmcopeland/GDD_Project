@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+body {
+  background-color: #111626;
+}
+
+.cardBg {
+  background-color: #eb3a2e;
+}
+
+.cardDarkBg {
+  background-color: #d22014;
+}
+
+.btnBg {
+  background-color: #f9c900;
+}
+
+* {
+  font-family: "Abel", sans-serif;
+}
+
+.collapse {
+  transition: all ease 0.35s;
+}
+
+.contactButton {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  z-index: 2;
+  color: #a31910;
+  width: 145px;
+  height: 38px;
+  transition: all ease 0.35s;
+  overflow: hidden;
+}
+.contactButton .infoIcon {
+  display: none;
+}
+.contactButton[aria-expanded="true"] {
+  width: 52px;
+  height: 52px;
+}
+/* .contactButton[aria-expanded="true"] .infoText {
+  display: none;
+}
+.contactButton[aria-expanded="true"] .infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+  height: 30px;
+  width: 30px;
+}
+ */
+
+
+.mIcon {
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: #ffffff;
+}
+.mIcon.facebook {
+  background-color: #4267b2;
+}
+.mIcon.twitter {
+  background-color: #1da1f2;
+}
+.mIcon.instagram {
+  background-color: #c32aa3;
+}

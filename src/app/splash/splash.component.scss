@@ -1,0 +1,120 @@
+
+
+$primary: #85A447;
+$primaryLight: #b5cf83;
+$primaryDark: #465831;
+$color: #fff; 
+
+.menu {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    opacity: 0.9;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: darken(#568d40, 5);
+    z-index: 10;
+
+}
+
+.card {
+    border-width: thick;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    font-family: 'Open Sans', sans-serif;
+    background: #333331;
+    color: white;
+
+  }
+
+  @media screen and (max-width: 375px) {
+  .card{  
+    
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size:200%;
+  }
+  }
+
+  input[type="checkbox"],
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+}
+label::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $primary;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[type="radio"] + label::before {
+  border-radius: 18px;
+}
+/* Checked */
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  padding-left: 10px;
+  color: #fff;
+}
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $primaryDark;
+}
+/* Transition */
+label,
+label::before {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.btn {
+    background: darken($primary, 15) !important;
+    border-color: $primaryDark
+}
+.btn:hover, .btn-primary:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+    color: white !important; 
+    background-color: darken($primary, 25) !important;
+    border-color: white; 
+    color: white
+}
+
+
+hr {
+    border: 1px solid $primary;
+}

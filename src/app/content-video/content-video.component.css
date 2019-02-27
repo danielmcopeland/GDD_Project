@@ -1,0 +1,93 @@
+.spacer {
+  width: 100%;
+  height: 10em;
+}
+
+.jumbotron {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  top:10%;
+  left:0;
+  width:100%;
+  position: absolute;
+  text-align: center;
+}
+
+.resp-container{
+  overflow: hidden;
+  padding-top: 56.26%;
+  justify-content: center;
+  margin:0
+}
+
+iframe{
+  position: absolute;
+  top:14%;
+  left:0;
+  width:100%;
+  height:60%;
+  border:0;
+  margin:0
+}
+
+form{
+  position: relative;
+  width:100%;
+  top:52vh;
+  z-index: 10;
+
+}
+
+.btn{
+  background:#7da74e;
+  
+}
+
+@media screen and (min-width: 1500px){
+  form{
+    top:53vh;
+  }
+  iframe{
+    top:18%;
+    height:55%;
+  }
+  h2{
+    top:13%;
+  }
+}
+
+@media screen and (min-width: 1905px){
+  form{
+    top:58vh;
+  }
+}
+
+@media screen and (max-width:1025px){
+  form{
+    top:65vh;
+  }
+
+  iframe{
+    top:15%;
+  }
+}
+
+
+@media screen and (max-width:500px){
+
+  h2{
+    top:13%;
+    font-size: 1.5em;
+  }
+   form{
+     top:40vh;
+   }
+
+   iframe{
+     top:17%;
+     height:40%;
+   }
+}
+

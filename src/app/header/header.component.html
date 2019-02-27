@@ -1,0 +1,29 @@
+<nav fxLayout="row" class="app-header" fxLayoutAlign="start center">
+  <a mat-icon-button class="app-header-brand" [routerLink]="['']">
+    <img src="assets/img/teamdaugherty.png" alt="Daugherty Logo" />
+  </a>
+  <div fxFlex></div>
+  <!-- <div *ngIf="userInfo.isAdmin == true"> -->
+
+
+
+  <a mat-button [routerLink]="['']" class="app-header-link">
+    All Episodes
+  </a>
+
+  <a mat-button *ngIf="userInfo.isAdmin" [routerLink]="['/addEpisode']" class="app-header-link">
+    Add Episode
+  </a>
+  <!-- </div> -->
+
+  <a mat-button *ngIf="userInfo.isAdmin" [routerLink]="['/viewData']" class="app-header-link"
+    (click)="location.reload()">
+    View Data
+  </a>
+
+  <a mat-button *ngIf="userInfo.isAdmin" (click)="logout()" [routerLink]="['']" class="app-header-link">
+    Logout
+  </a>
+
+  <div fxFlex="1"></div>
+</nav>

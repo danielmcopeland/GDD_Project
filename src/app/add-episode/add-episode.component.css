@@ -1,0 +1,89 @@
+ul {
+  list-style-type: none;
+}
+
+
+.spacer {
+  width: 100%;
+  height: 10em;
+}
+
+
+
+
+img{
+  padding:0;
+  margin-bottom:0
+}
+
+.card {
+
+    width:100%;
+    padding-bottom: 20vh;
+    padding-top:20vh;
+    -webkit-box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -10px 10px 68px -8px rgba(0, 0, 0, 0.75);
+    font-family: 'Open Sans', sans-serif;
+    background: #333331;
+    color: white;
+
+  }
+
+  form {
+    width:100%;
+    height:450px;
+    margin:auto;
+    position:relative;
+   
+  }
+
+  input {
+    margin-left:25%;
+    width:50%;
+    height: 25px;
+      }
+
+      textarea{
+        width:50%;
+        margin-left: 25%;
+      }
+
+
+  @media screen and (max-width: 375px) {
+  .card{  
+    
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size:200%;
+  }
+  }
+
+  .btn {
+    background: #85A447 !important;
+}
+
+.btn-danger{
+    background:rgb(216, 2, 2) !important;
+}
+
+.btn-success, .btn-primary{
+    border-color: black;
+}
+
+
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn {
+    color: white !important; 
+    background:  darken(rgb(216, 2, 2),10) !important;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active{
+    background: rgb(3, 102, 3) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background: rgb(4, 103, 196) !important;
+}

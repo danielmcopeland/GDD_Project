@@ -1,0 +1,53 @@
+<nav class="menu">
+
+
+  <div class="card border rounded">
+    <div class="card-body">
+      <div class="center-on-page">
+        <div class="iconPhoto">
+          <img src="https://media.glassdoor.com/sqll/233317/daugherty-business-solutions-squarelogo-1437430956817.png"
+            width="150px" class="img p-2 actualPhoto" />
+
+        </div>
+        <hr>
+        <h1>Please Provide Your Information</h1>
+        <hr>
+
+        <h2>Location</h2>
+        <form>
+          <input type="radio" value="Saint Louis" [(ngModel)]="userInfo.businessUnit" name=" rb" id="rb1" />
+          <label for="rb1">Saint Louis</label>
+          <input type="radio" value="Chicago" [(ngModel)]="userInfo.businessUnit" name="rb" id="rb2" />
+          <label for="rb2">Chicago</label>
+          <input type="radio" value="Atlanta" [(ngModel)]="userInfo.businessUnit" name="rb" id="rb3" />
+          <label for="rb3">Atlanta</label>
+          <br>
+          <input type="radio" value="New York" [(ngModel)]="userInfo.businessUnit" name="rb" id="rb4" />
+          <label for="rb4">New York</label>
+          <input type="radio" value="Dallas" [(ngModel)]="userInfo.businessUnit" name="rb" id="rb5" />
+          <label for="rb5">Dallas</label>
+          <input type="radio" value="Minneapolis" [(ngModel)]="userInfo.businessUnit" name="rb" id="rb6" />
+          <label for="rb6">Minneapolis</label>
+          <br>
+          <br>
+          <h2>Group</h2>
+          <input type="radio" value="SA&E" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb1" />
+          <label for="cb1">SA&E</label>
+          <input type="radio" value="BA" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb2" />
+          <label for="cb2">BA</label>
+          <input type="radio" value="DL" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb3" />
+          <label for="cb3">DL</label>
+          <input type="radio" value="DA" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb4" />
+          <label for="cb4">DA</label>
+          <input type="radio" value="Corporate" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb5" />
+          <label for="cb5">Corporate</label>
+          <input type="radio" value="Mobility" [(ngModel)]="userInfo.lineOfService" name="cb" id="cb6" />
+          <label for="cb6">Mobility</label>
+          <br>
+          <br>
+          <button type="button" class="btn btn-primary btn-block" (click)="login()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>

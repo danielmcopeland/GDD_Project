@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card mt-5">
+        <div *ngIf="userInfo.isAdmin">
+          <input type="checkbox" name="" (click)="makeEdit()" class="checkbox">
+          <div class="toggle"><i class="fas fa-pencil-alt"></i></div>
+        </div>
+        <div class=" card-body p-0 text-black">
+          <div class="position-relative p-5 pb-4">
+            <div class="d-flex align-items-center">
+              <div class="iconPhoto">
+                <img
+                  src="https://media.glassdoor.com/sqll/233317/daugherty-business-solutions-squarelogo-1437430956817.png"
+                  width="150px" class="img p-2 actualPhoto" />
+              </div>
+              <div class="col-11">
+                <div class="container">
+
+                  <div class="row h2">
+                    {{ name }}
+                  </div>
+                  <!-- <div class="row justify-content-center h3">
+                    <span> #{{ episodeNumber }}</span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <button class="d-flex btn btn-warning  
+              contactButton justify-content-center" (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="isCollapsed" aria-controls="collapse">
+              <span class="infoText">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+              </span>
+            </button>
+          </div>
+
+          <div class="collapse bg-white" [ngbCollapse]="!isCollapsed" [attr.aria-expanded]="isCollapsed">
+            <div class="collapse-content">
+
+              <div class="designation col-lg-12 cardDarkBg ">
+                {{ summary }}
+              </div>
+
+              <div class="section p-2 bg-white text-uppercase">
+                Choose Your Format :
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <a routerLink="/video/{{ id }}" class="bg-transparent p-3 mt-2  card-link">
+                      <span class="mIcon video">
+                        <i class="fa fa-video-camera"></i>
+                      </span>
+                    </a>
+
+                    <a routerLink="/audio/{{ id }}" class="bg-transparent p-3 mt-2  card-link">
+                      <span class="mIcon audio">
+                        <i class="fa fa-volume-up"></i>
+                      </span>
+                    </a>
+                    <a routerLink="/transcript/{{ id }}" class="bg-transparent p-3 mt-2  card-link">
+                      <span class="mIcon transcript">
+                        <i class="fa fa-file-text"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="collapse1" [ngbCollapse]="!isCollapsed"></div>

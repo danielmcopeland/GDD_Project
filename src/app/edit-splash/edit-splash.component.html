@@ -1,0 +1,55 @@
+<nav class="menu">
+
+
+  <div class="card border rounded">
+    <div class="card-body">
+      <div class="center-on-page">
+        <div class="iconPhoto">
+          <img src="https://media.glassdoor.com/sqll/233317/daugherty-business-solutions-squarelogo-1437430956817.png"
+            width="150px" class="img p-2 actualPhoto" />
+
+        </div>
+        <hr>
+
+        <form class="needs-validation" novalidate>
+          <div class="form-row justify-content-center">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip01">Title</label>
+              <input type="text" class="form-control" id="validationTooltip01" placeholder="Title" value="" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+          </div>
+          <div class="form-row justify-content-center">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip03">Summary</label>
+              <textarea class="form-control" id="validationTooltip03" rows="5" placeholder="Episode Summary Content"
+                value="" required></textarea>
+              <div class="invalid-tooltip">
+                Please provide a valid summary.
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-row justify-content-around">
+            <div class="custom-file col-md-3 mt-3 mb-4">
+              <input type="file" class="custom-file-input" id="videoFile">
+              <label class="custom-file-label" for="videoFile">Choose video file</label>
+            </div>
+            <div class="custom-file col-md-3 mt-3 mb-4">
+              <input type="file" class="custom-file-input" id="audioFile">
+              <label class="custom-file-label" for="audioFile">Choose audio file</label>
+            </div>
+            <div class="custom-file col-md-3 mt-3 mb-4">
+              <input type="file" class="custom-file-input" id="transcriptFile">
+              <label class="custom-file-label" for="transcriptFile">Choose text file </label>
+            </div>
+          </div> -->
+          <button class="btn btn-success mr-3" type="submit" (click)="closeSplash()">Submit Edit</button>
+          <button class="btn btn-primary mr-3" type="submit" (click)="closeSplash()">Cancel</button>
+          <button class="btn btn-danger" type="submit" (click)="closeSplash()">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>

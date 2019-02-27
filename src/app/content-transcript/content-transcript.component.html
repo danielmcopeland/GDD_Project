@@ -1,0 +1,29 @@
+<div class="spacer">
+  &nbsp;
+</div>
+
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300"
+  rel="stylesheet"
+/>
+
+<h2 class="jumbotron">{{ episode.Title }}</h2>
+<div>
+  <a href="{{ textLink }}">Transcript goes here</a>
+</div>
+
+<div>
+  <!--Comment box-->
+  <h3></h3>
+  <form action="" id="feedbackForm">
+    <label for="feedback">Feedback? Let us know!</label>
+    <textarea
+      name="feedback"
+      id="feedback"
+      cols="40"
+      rows="5"
+      form="feedbackForm"
+    ></textarea>
+    <input type="submit" value="Submit" />
+  </form>
+</div>

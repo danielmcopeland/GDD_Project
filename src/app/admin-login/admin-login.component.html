@@ -1,0 +1,63 @@
+<div class="spacer">
+  &nbsp;
+</div>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- <div class="home" fxLayout="column">
+  <div fxLayout="row">
+    <div fxFlex></div>
+    <div fxFlex class="home-login" [hidden]="loggedInUser">
+      <h3>Admin Login</h3>
+
+      <form #userLoginForm="ngForm" fxLayout="column" (ngSubmit)="login()">
+        <input type="text" id="username" name="username" matInput [(ngModel)]="credentials.username" required
+          placeholder="Username" />
+
+        <input type="password" id="password" name="password" matInput [(ngModel)]="credentials.password" required
+          placeholder="Password" />
+
+        <button type="submit" mat-raised-button color="primary" class="home-login-button">
+          Sign In
+        </button>
+      </form>
+    </div>
+  </div> -->
+
+<div class="container">
+  <div class="row ">
+    <form #userLoginForm="ngForm" (ngSubmit)="login()" class="col">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Admin Login</span>
+          <div class="row">
+            <div class="input-field col">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="username" type="text" placeholder="Username" name="username" matInput
+                [(ngModel)]="credentials.username" class="validate" required>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col">
+              <i class="material-icons prefix">vpn_key</i>
+              <input id="password" name="password" placeholder="Password" type="password"
+                [(ngModel)]="credentials.password" class="validate" matInput required>
+
+              <button class="btn waves-effect waves-light mt-5" type="submit" name="action">Submit
+
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<script>
+  mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+</script>

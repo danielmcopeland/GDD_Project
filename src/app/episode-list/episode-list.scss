@@ -1,0 +1,230 @@
+
+$primary: #568d40;
+$primaryLight: #b5cf83;
+
+.container-fluid {
+  height: 10vh;
+  width: 14vh;
+  position: relative;
+
+}
+
+.img-responsive {
+  top: 10vh;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+ display:block;
+
+
+}
+
+
+#pichr {
+  border-top-color: white;
+  border-bottom-color: white;
+}
+
+
+.img-responsive {
+  top: 10vh;
+  position: -webkit-sticky;
+  position: sticky;
+  max-width: 100%;
+  height: auto;
+ display:block;
+
+
+}
+
+.col{
+  top: 50vh;
+}
+
+body{
+  background-image: url("https://s3-us-west-2.amazonaws.com/daugherty-teamwon/GDD+-+no+text.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.box {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.box span {
+  z-index: 20;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+  animation-delay: -0.2s;
+  transform: rotate(45deg) translate(-20px,-20px)
+}
+.box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px)
+  }
+  50% {
+    opacity: 1;
+    
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px)
+  }
+}
+
+
+
+///header text animation
+.animation-box {
+  top: 31.5vh;
+  width: 75%;
+  height: 27.5rem;
+  background-color: transparent;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    position: absolute;
+  }
+
+  55% {
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:1560px){
+  .animation-box{
+    top:27vh;
+  }
+}
+
+@media screen and (max-width:1025px){
+
+  .animation-box{
+     top:35vh;
+  }
+  
+  .box{
+    top:72%;
+  }
+  
+  .col {
+  top:65vh;
+  
+  }
+    
+  }
+  
+
+.first-text {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  opacity: 1;
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+ 
+
+}
+
+
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+
+  animation-duration: 8s;
+  opacity: 1;
+  text-shadow: 1px 1px 10px #000;
+
+}
+
+@media screen and (max-width:420px) {
+
+  .animation-box{
+    top: 31.5vh;
+  }
+
+    .first-text{
+      font-size:1.5em;
+    }
+
+
+    .second-text{
+      font-size: 1em;
+      top: 7.5rem;
+      margin-left: 2rem;
+    }
+
+    .col {
+      top:30vh;
+    }
+
+    .box{
+      top:65%;
+    }
+}
+
+.d-header{
+  color: white;
+
+}

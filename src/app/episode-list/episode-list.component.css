@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  padding: 10px
+}
+
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}

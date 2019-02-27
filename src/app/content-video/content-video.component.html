@@ -1,0 +1,22 @@
+<div class="spacer">
+  &nbsp;
+</div>
+
+<h2>{{ episode.Title }}</h2>
+<div>
+  <iframe [src]="videoLink | safe" width="640" height="640" frameborder="0" webkitallowfullscreen mozallowfullscreen
+    allowfullscreen></iframe>
+</div>
+
+<div>
+  <!--Comment box-->
+  <h3></h3>
+  <form action="" id="feedbackForm">
+    <label for="feedback"></label>
+    <textarea name="feedback" id="feedback" cols="40" rows="3" form="feedbackForm"
+      placeholder="Feedback? Let us know!"></textarea>
+    <div class="row justify-content-center">
+      <input class="btn" type="submit" value="Submit" />
+    </div>
+  </form>
+</div>
